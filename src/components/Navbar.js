@@ -1,12 +1,14 @@
+// src/components/Navbar.js
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav style={{ padding: '10px', background: '#eee' }}>
-      <ul style={{ display: 'flex', gap: '15px', listStyle: 'none' }}>
-        <li><Link to="/">Головна</Link></li>
-        <li><Link to="/about">Про нас</Link></li>
-        <li><Link to="/contact">Контакти</Link></li>
+    <nav style={{ padding: '15px', background: '#282c34', color: 'white' }}>
+      <ul style={{ display: 'flex', gap: '20px', listStyle: 'none', margin: 0 }}>
+        <li><Link to="/" style={{ color: 'cyan', textDecoration: 'none' }}>Головна</Link></li>
+        <li><Link to="/about" style={{ color: 'cyan', textDecoration: 'none' }}>Про нас</Link></li>
+        <li><Link to="/contact" style={{ color: 'cyan', textDecoration: 'none' }}>Контакти</Link></li>
+        <li><Link to="/gallery" style={{ color: 'yellow', textDecoration: 'none' }}>Галерея</Link></li> {/* 👈 ДОДАЙ ЦЕ */}
       </ul>
     </nav>
   );
